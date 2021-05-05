@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,700&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+		@font-face {
+    font-family: 'twaysky';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+		html{background-color: #1C2020;font-family: 'Noto Sans KR', sans-serif;}
+		header{background: url();}
+		nav{background-color: #CD7D58; height: 50px; text-align: right; color: white; padding-top: 30px; padding-right: 30px} 
+
+		h1{color: #CD7D58; text-align: center;font-family: 'Playfair Display', serif;}
+		h3{color: #CD7D58; text-align: center;font-family: 'Playfair Display', serif; margin-top: 200px}
+		h2{color: #CD7D58; text-align: center;}
+		p{color: white; text-align: center}
+		div{background: none}
+
+		a{display: inline-block;
+			background: white;
+			color: #1C2020;
+			width: 300px; height: 50px; 
+			text-align: center;
+			line-height: 50px;
+			text-decoration: none;
+			align-items: : center;
+			font-weight: bold;
+			border-radius: 5px;
+			/*border:1px solid darkgray;*/
+			box-shadow: 0px 0px 3px gray;
+			color: black
+			margin-bottom:30px;}
+		a:hover{
+			background: #CD7D58;
+			box-shadow: none;
+			color: white;
+			transition: all 0.5s;}
+		footer{background:#CD7D58; width: auto; height: 400px; display: flex; justify-content: center; padding: 100px;}
+
+
+
+	/*blank*/
+		
+		.blank{height: 150px; width: auto; margin-top: 100px}
+		.blink{margin-bottom: 50px}
+		.margintop{margin-top: 150px}
+		.textmargin{margin-bottom: 16px}
+
+	/*color*/
+		.white{color: white}
+
+		.gradient{background: rgb(28,32,32);
+background: linear-gradient(180deg, rgba(28,32,32,1) 0%, rgba(205,125,88,1) 100%);width: auto; height: 300px}
+		.gradient2{background: rgb(28,32,32);
+background: linear-gradient(90deg, rgba(28,32,32,1) 0%, rgba(205,125,88,1) 100%); width: auto; height: 300px}
+		.gradient3{background: rgb(28,32,32);
+background: linear-gradient(270deg, rgba(28,32,32,1) 0%, rgba(205,125,88,1) 100%); width: auto; height: 300px}
+		.gradient4{background: rgb(28,32,32);
+background: linear-gradient(0deg, rgba(28,32,32,1) 0%, rgba(28,32,32,0) 100%); width: auto; height: 1000px; z-index: 30}
+
+
+		.textleft{text-align: left}
+		.textcenter{text-align: center}
+		.textkorean{font-family: 'twaysky'; font-size: 2em; margin-top: 0}
+		.textkorean2{font-family: 'twaysky'; margin-top: 0}
+		.textenglish{font-family: ' Display'; font-size: 1em}
+		.textdouble{font-size: 1.5em}
+		
+		.title{font-size: 4em; font-style: italic; margin-bottom: 0; margin-top: 30px; margin-left: 30px}
+		.subtitle{color: darkgray; margin-top: 0; margin-bottom: 50px; font-size: 14px; margin-left: 30px}
+		.gray{color: gray}
+
+		.box{margin-left: 30px; margin-right: 30px;  display: flex; justify-content: center}
+		#box{margin-left: 30px; margin-right: 30px;  display: flex; justify-content: center; }
+		
+
+/*image*/
+		#circle{background: url('baguette2.png'); background-size:cover; width:400px; height: 400px;	border:1px solid #CD7D58; border-radius: 300px; margin-right:100px;}
+		#circle:hover{background: url('baguette.png'); background-size:cover; width:400px; height: 400px;	border:1px solid #CD7D58; border-radius: 300px; margin-right:100px;}
+
+		#tartegradient1{width: 450px; height: 675px; background: url('tarte1.jpg')} 
+		#tartegradient1:hover{width: 450px; height: 675px; background: url(tartegradient1.jpg);} 
+
+		#tartegradient2{width: 450px; height: 675px; background: url('tarte2.jpg')}
+		#tartegradient2:hover{width: 450px; height: 675px; background: url(tartegradient2.jpg);}
+
+		#tartegradient3{width: 450px; height: 675px; background: url('tarte3.jpg')}
+		#tartegradient3:hover{width: 450px; height: 675px; background: url(tartegradient3.jpg);}
+
+
+		#width1{width: auto; height: 300px; background: url('width1.jpg')}
+		#width1:hover{width: auto; height: 300px; background: url('width11.jpg')}
+		#width2{width: auto; height: 300px; background: url('width2.jpg')}
+		#width2:hover{width: auto; height: 300px; background: url('width22.jpg')}
+		#width3{width: auto; height: 300px; background: url('width3.jpg')}
+		#width3:hover{width: auto; height: 300px; background: url('width33.jpg')}
+
+		#cover1{width:100px; height: 300px; background: url(cover1.jpg);}
+		#cover2{width:100px; height: 300px; background: url(cover2.jpg);}
+
+
+
+
+		.line{width: 1px; height:400px;background-color: #CD7D58; margin:0 auto}
+		.grayline{width: 800px;height: 1px; background: gray; margin-top: 50px; margin-bottom: 50px}
+	
+
+		.button{width: 150px; height: 50px; background: none; border: 1px solid #CD7D58; margin-top: 30px;  font-family: 'twaysky';line-height: 50px; color: #CD7D58;}
+		.button2{width: 300px; height: 50px; background: none; border: 1px solid #CD7D58; margin-top: 100px;  font-family: 'twaysky';line-height: 50px; color: #CD7D58; margin:0 auto;}
+		.orangeemptybox{width: 100px; height: 10px; background: #CD7D58; border:1px solid #CD7D58; margin-top: 50px; margin-left: 5px; margin-right: 5px; margin-bottom: 150px }
+		.whiteemptybox{width: 100px; height: 10px; background: #1C2020; border:1px solid white; margin-top: 50px;margin-left: 5px; margin-right: 5px;  margin-bottom: 150px }
+		.graybox{width: 800px; height: 1000px; background: background: rgb(28,32,32);
+background: linear-gradient(0deg, rgba(28,32,32,1) 0%, rgba(28,32,32,0) 100%); border-radius: 30px; display:static;  margin: 0 auto; margin-top:100px; padding: 50px; color: white}
+		.back1{background: url(group.png);background-size: 500px; background-attachment: fixed; height: 1000px}
+
+		.orange{color: #CD7D58; text-align: center}
+		.orange2{color: #CD7D58;}
+		.row{width: 400px; height: 150px; background: none;margin: auto; position: relative; color: white; text-align: center;border-radius: 30px}
+		.smalltitle{text-align: left}
+		.smalltitle2{text-align: center}
+		.smalltitle3{text-align: left; color:gray;}
+		.temporary{width: 1000px; height:300px;background-color: white; margin: 30px}
+		.temporary2{width: 1000px; height:200px;background-color: #1C2020;}
+
+.absolute{display: block;position: absolute;}
+		.sticker1{left: 500px; width: 300px; top: 180px; z-index: 33}
+
+		.sticker2{left: 600px; width: 300px;  z-index: 33; position: absolute; left:100px; top:7350px; border-radius: 50%; animation: leftright	3s infinite; ; 
+		}
+		@keyframes leftright{
+			from{left:0px;}
+			to{left:1000px;}
+		}
+}
+		
+
+	#footertext{margin-top: 100px; }
+	#empty{width: 30px; height:auto;}
+	#my{background: #1C2020; text-align: center; color: white}
+
+
+		
+		
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="textkorean2">
+			 Home |  About   |   Bakery   |   고객지원
+		</div>
+	</nav>
+	<section>
+		<div>
+			<h1 class="title textleft">Wizard Bakery</h1>
+			<p class="subtitle textleft">위험한 소원이 이루어지는 곳 위저드 베이커리</p>
+			<div class="box blink">
+				<div id="circle"> </div>
+				<div>
+					<h2 class="textleft">오늘의 빵</h2>
+					<h1 class="textleft textkorean">악마의 바게트</h1>
+					<p class="textleft">한 번쯤 나대신 누군가 나를 위해 나가줬으면 바란적이 있나요?</p>
+
+					<p class="textleft ">도플갱어가 가기 싫던 학교나 회사에 나 대신 가 줍니다.<br>
+						다만 진짜로 자신의 도플갱어를 확인하기위해 따라가지는 마세요. 만약 당신의 도플갱어가<br>
+						만난다면 한쪽이 사라질텐데... </p>
+
+					<p class="textleft">그게 어느쪽이겠어요?</p>
+					<div class="button textcenter">자세히보기</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section>
+		<div>
+			<div id="box">
+				<div> 
+					<img src="shop1.jpg">
+					<img src="shop2.jpg">
+					<img src="shop3.jpg">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div>
+			<div class="box">
+				<div class="orangeemptybox" > </div>
+				<div class="whiteemptybox"> </div>
+				<div class="whiteemptybox" > </div>
+				<div class="whiteemptybox"> </div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="blink">
+			<h3 class="textleft textkorean">SEASON : 포춘 타르트</h3>
+			<p class="smalltitle">다가오는 봄, 새콤달콤한 과일과 함께 당신의 운을 점쳐 보세요. </p>
+			<div class="box">
+				<div id="tartegradient1"></div>
+				<div id="tartegradient2"></div>
+				<div id="tartegradient3"></div>
+
+			</div>
+				<div>d</div>
+				<div>d</div>
+			 </div>			
+		</div>
+	</section>
+	<section>
+		<div class="margintop">
+			<h1 class="textleft textkorean">사람들이 많이 찾는 소원. 당신도 필요하신가요?</h1>
+			<p class="smalltitle">위저드 베이커리 top3 </p>
+			<div>
+				<div id="width1"></div>
+				<div id="width2"></div>
+				<div id="width3"></div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="margintop">
+			
+			<h1 class="textleft textkorean">시간은 당신을 기다려주지 않습니다. <br>어떻게 알아요? 후회하게 될 지.</h1>
+			<p class="smalltitle">전체보기 </p>
+			<div style="text-align: center; width: 1000px" class="blink">
+				<img src="grouping2.png">
+			</div>
+		</div>
+	</section>
+	<section>
+		<div>
+			<div class="back1">
+			
+			</div>
+			<h1 class="title blank">Time Rewinder </h1>
+		</div>
+
+
+	<section>
+		<div class="gradient"></div>
+	</section>
+
+
+	</section>
+		<nav>
+		<div class="textkorean2">
+			 Home |  About   |   Bakery   |   고객지원
+		</div>
+	</nav>
+
+
+		<section>
+		<div>
+			<p class="margintop textdouble">등록하신 문의 내용이 없습니다.</p>
+			<p>위저드 베이커리에 대해서 궁금한 점이 있으시면 <br> 아래 문의하기 버튼을 눌러 문의내용을 남겨주시기 바랍니다.</p>
+			<div class="button2 textcenter">문의하기 </div>
+			<div class="graybox"> 
+				<div class="textdouble textmargin">🔓 타임리와인더 재고는 언제 들어오나요? 간절합니다.</div>
+				<div>어제 오후 14:06분 작성</div>
+				<div class="grayline"></div>
+				<div class="textmargin">오늘 아이가 우리 곁을 떠났습니다. 아이의 병은 오래된 것이었고 돌이킬 수 없었습니다. </div>
+				<div class="textmargin">나는 아이의 병이 발견되기 이전으로 시간을 되감기에는 터무니없이 돈이 부족합니다. 이미 병원비로 얼마 되지 않는 재산을 다 털었고요.</div>
+				<div class="textmargin"> 다만 한 가지 바람이 있다면, 딱 하루만 그 아이와 함께할 시간을 얻는다면 미처 하지 못했던 마지막 인사를 해주고 싶고, <br>아이가 그렇게 가고 싶어 했던 놀이공원에도 데려가고 싶습니다. 마지막을 너무 준비없이 병원의 공포스럽고 부산한 <br>분위기와 소독약 냄새 속에 싸여 보낸 것이 안타깝습니다.</div>
+
+				<div class="textmargin">이렇게 두 가지만 할 수 있다면 아이를 두 번 보내는 고통을 기꺼이 감당할 수 있을 겁니다.</div>
+				<div class="grayline"></div>
+				<div class="textdouble textmargin">↪ 🔓 RE: 타임리와인더 재고는 언제 들어오나요? 간절합니다.</div>
+				<div class="textmargin">안녕하세요. 위저드 베이커리를 이용해주셔서 언제나 감사드립니다.</div>
+				<div class="textmargin">요청하신 타임 리와인더는 주문과 동시에 제작에 들어가므로, 우선 입금을 원칙으로 합니다. 입금 후 타임 리와인더를 받을 주소를 기입해 주십시오. </div>
+				<div class="textmargin">타임 리와인더의 사용방법은 간단합니다. 간절히 되돌리고 싶은 시간을 마음 속으로 설정합니다. 그리고 한입 크기의 머랭 쿠키를 입속에 넣고 부숩니다. 그런 다음 치아나 혀끝에 닿은 종이를 밖으로 끄집어냅니다. 쿠키는 드셔도 됩니다. 그 종이에는 '그' 날짜와 시각이 붉은 글씨로 적혀 있을 것입니다.  </div>
+				<div class="textmargin">되돌리고 싶은 날짜와 시각도 적어서 보내주십시오. </div>
+				<div class="textmargin"><div class="orange2">당신의 소원이 당신의 생각만큼 간절하기를.</div> 
+				<div class="textmargin">위저드 베이커리를 찾아주셔서 감사합니다. </div>
+				<div class="textmargin orange2">date ____ . __ . __</div>
+				<div class="textmargin orange2">time __ . __</div>
+			</div>
+		
+				
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<img src="https://media.giphy.com/media/S8r4Sy7XjS97zY8tp1/giphy.gif" class="absolute sticker1">
+		<img src="https://media.giphy.com/media/hy6PxSRvnrTXWCku1w/giphy.gif" class="absolute sticker2">
+		<div class="blank">
+			<h1 class="textkorean ">하나.</h1>
+			<p>인생의 막다른 골목에 몰린 당신, 숨을 곳이 있는가? </p>
+			<p class="gray">빵 냄색 풍기는 따뜻한 화덕 같은 곳, <br> 당신을 이끌어줄 마법사 멘토와 당신을 따뜻하게 감싸줄
+파랑새 같은 소녀가 있는 곳이? 있다면 다행이다. </p>
+		</div>
+	</section>
+	<section>
+		<div class="blank">
+			<h1 class=" textkorean ">둘.</h1>
+			<p>사는 게 너무 고통스러운 당신, 시간을 되돌리고 싶은 적이 있는가? </p>
+			<p class="gray">조건이 있다. 당신은 모든 기억을 지우고 가야 한다.<br> 그때 똑같은 선택을 반복하지 않을 자신이 있는가? 
+같은 선택을 한다면 당신은 이미 겪은 끔찍한 고통을 다시 겪어야 한다. </p>
+		</div>
+	</section>
+	<section>
+		<div class="blank">
+			<h1 class="textkorean">셋.</h1>
+			<p>그래도 당신, 이 책을 읽을 건가? </p>
+			<p class="gray">이 책은 당신을 달콤한 빵 냄새로 유혹해 악몽처럼 섬뜩한 진실로 이끈다.</p>
+		</div>
+	</section>
+
+
+	<section>
+		<div>
+			<div class="line"></div>
+		</div>
+	</section>
+
+
+	<section>
+		<div>
+			<p>지금은 나의 과거와, 현재와 어쩌면 올수도 있는 미래를 향해 달린다</p>
+			<h1>wizard bakery</h1>
+		</div>
+	</section>
+	<footer>
+		<div>
+			<img src="cover3.jpg">
+		</div>
+		<div id="empty"></div>
+		<div id="footertext">
+			<p class="textleft textkorean">위저드 베이커리</p>
+			<p class="textleft">구병모 저 | 창비 | 2009년 03월 27일</p>
+			<p class="textleft"> 
+				어머니가 죽은 뒤 재혼한 아버지와 새어머니, 의붓여동생과 살게 된 열여섯 살의 소년.<br> 
+				소년은 여동생을 성추행했다는 누명까지 쓰게 되자 집에서 쫓기듯 뛰쳐나온다.<br>
+				급한 마음에 동네 빵집으로 뛰어든 소년을 기다리는 것은 놀라운 마법의 세계. <br>
+				언뜻 보기엔 평범한 빵집인 것만 같은 ‘위저드 베이커리’에서는<br>
+				인간들의 주문에 따라 마법의 빵이 만들어지고 있었던 것. <br>
+				소년은 이곳에 머물며 자신의 욕망에 따라 마법의 힘을<br>
+				 마음대로 휘두르고 싶어 하는 인간들의 행태를 목격한다.<br>
+				 그러나 ‘위저드 베이커리’에 대한 경찰의 수사가 시작되면서 <br>
+				 현실로 돌아가야 하는 시간이 다가오는데…….
+
+			<p class="textleft">창비청소년문학상 수상작</p>
+		</div>
+		
+	</footer>
+	<div id="my">  
+			<div>Web Interface Design </div>
+			<div>designed by Hyunyoung Lyu ©2021 all rights reserved</div>
+	</div>
+
+
+
+</body>
+</html>
